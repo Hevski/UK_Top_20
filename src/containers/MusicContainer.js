@@ -16,7 +16,7 @@ class MusicContainer extends Component {
   }
 render(){
   return(
-    <div>
+    <div className="container">
      <h2>itunes top 20</h2>
      <MusicList topTwenty={this.state.topTwenty}/>
     </div>
