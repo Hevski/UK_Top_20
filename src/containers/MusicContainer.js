@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MusicList from '../components/MusicList';
+import './MusicContainer.css'
 class MusicContainer extends Component {
   constructor(props){
     super(props);

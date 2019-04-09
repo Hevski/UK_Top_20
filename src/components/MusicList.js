@@ -9,7 +9,8 @@ const MusicList = ({topTwenty}) => {
     key={song.id}
     artist={song["im:artist"].label}
     song={song["im:name"].label}
-    sound={song.link[1].attributes.href}>
+    sound={song.link[1].attributes.href}
+    image={song["im:image"][2].label}>
     </MusicDetail>
   )
 })

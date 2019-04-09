@@ -1,0 +1,40 @@
+.artist {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  border-style: solid;
+  margin: 12px;
+  text-align: center;
+  background: #f6ae72;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+p {
+  color: white;
+  background-color: rgba(74,70,70,0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sound {
+  display: flex;
+  justify-content: center;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media (min-width:768px) {
+  .zoom {
+    width: 46%;
+    margin: 2%;
+  }
+}
