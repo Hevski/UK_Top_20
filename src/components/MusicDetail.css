@@ -8,7 +8,7 @@
   text-align: center;
   background: #f6ae72;
   padding: 25px;
-  width: 50%;
+  width: 400px;
   align-items: center;
 }
 
@@ -33,9 +33,12 @@ p {
   transform: scale(1.05);
 }
 
-/* @media (min-width:768px) {
-  .zoom {
-    width: 46%;
-    margin: 2%;
+@media (max-width:768px) {
+  .songs-list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-} */
+  .artist {
+    width: 250px;
+  }
+}

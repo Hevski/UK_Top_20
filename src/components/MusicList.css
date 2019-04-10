@@ -8,6 +8,6 @@
 @media (min-width:768px) {
   .songs-list {
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
   }
 }
