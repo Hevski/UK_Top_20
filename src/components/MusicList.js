@@ -1,5 +1,6 @@
 import React from 'react';
 import MusicDetail from './MusicDetail';
+import './MusicList.css'
 
 const MusicList = ({topTwenty}) => {
 
