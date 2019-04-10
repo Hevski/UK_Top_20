@@ -6,9 +6,9 @@
   margin: 12px;
   text-align: center;
   background: #f6ae72;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px;
+  padding: 25px;
+  width: 50%;
+  align-items: center;
 }
 
 p {
@@ -32,9 +32,9 @@ p {
   transform: scale(1.05);
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
   .zoom {
     width: 46%;
     margin: 2%;
   }
-}
+} */

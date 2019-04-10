@@ -3,15 +3,9 @@ import MusicDetail from './MusicDetail';
 
 const MusicList = ({topTwenty}) => {
 
-  const musicNodes = topTwenty.map(song => {
+  const musicNodes = topTwenty.map((song, index) => {
   return (
-    <MusicDetail
-    key={song.id}
-    artist={song["im:artist"].label}
-    song={song["im:name"].label}
-    sound={song.link[1].attributes.href}
-    image={song["im:image"][2].label}>
-    </MusicDetail>
+    <MusicDetail key={index} song={song}></MusicDetail>
   )
 })
 return(

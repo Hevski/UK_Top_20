@@ -1,18 +1,17 @@
 import React from 'react';
 import './MusicDetail.css'
-const MusicDetail = (props) => {
-  const {artist, song, sound, image} = props
+const MusicDetail = ({song}) => {
   return(
+    <div className="artist">
     <div className="zoom">
-    <div className="artist" style={{backgroundImage: "url(" + image + ")"}}>
-    <p>{artist}</p>
-    <p>{song}</p>
+     <img src={song["im:image"][2].label} alt="album-work"></img>
+     <p>{song["im:artist"].label}</p>
+     <p>{song["im:name"].label}</p>
     <div className="sound">
-    <audio controls src={sound}></audio>
+     <audio controls src={song.link[1].attributes.href}></audio>
     </div>
     </div>
     </div>
   )
-
 }
 export default MusicDetail;
